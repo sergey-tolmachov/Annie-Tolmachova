@@ -29,9 +29,27 @@ $(document).ready(function(){
         var id  = $(this).attr('href'),
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top-200;
+            top = $(id).offset().top-150;
         
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1000);
     });
+});
+
+// $(window).scroll(function() {
+//     if ($(document).scrollTop() > 300) {
+//         $("#menu").style.color = "rgba(255, 255, 255, 0.9)";
+//         }
+//         else {
+//         $("#menu").style.color = "red";
+//       }
+// });
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 300) {
+        $( ".menu" ).addClass("menu2");
+        }
+        else {
+        $( ".menu" ).removeClass("menu2");
+      }
 });
