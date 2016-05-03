@@ -3,14 +3,14 @@
 <? 
 // ----------------------------конфигурация-------------------------- // 
  
-$adminemail="s.tolmachov@icloud.com";  // e-mail админа 
+$adminemail="ann.tolmachova@gmail.com";  // e-mail админа 
  
  
 $date=date("d.m.y"); // число.месяц.год 
  
 $time=date("H:i"); // часы:минуты:секунды 
  
-$backurl="http://tolmachov.website/forma-otpravki-test/index.html";  // На какую страничку переходит после отправки письма 
+$backurl="http://tolmachov.website/ann/index.html";  // На какую страничку переходит после отправки письма 
  
 //---------------------------------------------------------------------- // 
  

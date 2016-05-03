@@ -2,16 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Annie Tolmachova</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- для того что-бы работал плеер в IE браузере -->
+		<title>Анна Толмачова</title>
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-	    <link href="css/jplayer.blue.monday.css" rel="stylesheet">
-	    <link href="css/style.css" rel="stylesheet">
-	    <link href="icomoon/style.css" rel="stylesheet">
+    <link href="css/jplayer.blue.monday.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
 	</head>
@@ -20,26 +17,26 @@
 
   <!-- Menu -->
   <nav id="menu" class="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#song">My Songs</a></li>
-    <li><a href="#follow">Follow me</a></li>
+    <li><a href="#home">Головна</a></li>
+    <li><a href="#about">Про мене</a></li>
+    <li><a href="#song">Мої пісні</a></li>
+    <li><a href="#follow">Слідкуйте за мною</a></li>
 
 	<!-- Button trigger modal -->		
-	<button type="button" class="btn btn-primary btn-lg write-me-button write-me toggleModal" data-toggle="modal" data-target="#exampleModal">write me</button>
+	<button type="button" class="btn btn-primary btn-lg write-me-button write-me toggleModal" data-toggle="modal" data-target="#exampleModal">написати мені</button>
 
   </nav>
 
 <div class="wrapper">
   <!-- Cover Box -->
   <div id="home" class="cover-container">
-    <span class="cover-title">Annie Tolmachova</span>
+    <span class="cover-title">Анна Толмачова</span>
     <span class="cover-desc">Music in my heart...</span>
   </div>	
 
   <!-- About me Box -->
   <div id="about" class="about-me-container">
-    <span class="about-me-title">So, here I'm</span>
+    <span class="about-me-title">Про мене</span>
     <span class="about-me-desc">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       <br><br>
@@ -74,17 +71,7 @@
               </div>
 
             <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-            </div>
-
-
-    <!--         <div class="jp-volume-controls">
-              <button class="jp-mute" role="button" tabindex="0">mute</button>
-              <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-              <div class="jp-volume-bar">
-                <div class="jp-volume-bar-value"></div>
-              </div>
-            </div> -->
-
+          </div>
         </div>
       </div>
     </div>
@@ -96,11 +83,11 @@
 
   <!-- Contact Box -->
   <div id="follow" class="contact-container">
-    <span class="contact-title">You can find me here ;)</span>
-    <div class="social-box vk"></div>
-    <div class="social-box facebook"></div>
-    <div class="social-box instagram"></div>
-    <div class="social-box you-tube"></div>
+    <span class="contact-title">Шукайте мене тут:</span>
+    <a href="http://vk.com/atolmachova" target="_blank" class="social-box vk"></a>
+    <a href="https://uk-ua.facebook.com/" target="_blank" class="social-box facebook"></a>
+    <a href="https://www.instagram.com/ann_tolmachova/" target="_blank" class="social-box instagram"></a>
+    <a href="https://www.youtube.com/" target="_blank" class="social-box you-tube"></a>
   </div>  
 
 </div>
@@ -110,22 +97,22 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="exampleModalLabel">Please, leave your message</h4>
+		        <h4 class="modal-title" id="exampleModalLabel">Написати повідомлення</h4>
 		      </div>
 		      <div class="modal-body">
 		        <form action= "post.php" method= "POST">
 		          <div class="form-group">
-		            <input type="text" class="form-control" name= "name" placeholder="Name">
+		            <input type="text" class="form-control" name= "name" placeholder="Ім'я">
 		          </div>
 		          <div class="form-group">
 		            <input type="text" class="form-control" name= "email" placeholder="E-mail">
 		          </div>
 		          <div class="form-group">
-		            <textarea class="form-control" name= "message" placeholder="Message"></textarea>
+		            <textarea class="form-control" name= "message" placeholder="Повідомлення"></textarea>
 		          </div>
 		      </div>
 		      <div class="modal-footer">
-		        <input class="btn-send" type= "submit" value= "Отправить"> 
+		        <input class="btn-send" type= "submit" value= "Відправити"> 
 		      </div>
 		    </div>
 		  </div>

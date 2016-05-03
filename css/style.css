@@ -29,21 +29,21 @@ a {
 }
 
 a:hover {
-  color: #009688;
+  color: #F44336;
   text-decoration: none;
 }
 
 a:focus {
-  color: #009688;
+  color: #F44336;
   text-decoration: none;
 }
 
 .write-me-button {
-  width: 120px;
+  width: 160px;
   height: 30px;
   margin: 22.5px 0px;
   border-radius: 130px;
-  border: 1.5px solid #009688;
+  border: 1.5px solid #F44336;
   transition: 0.35s;
   position: absolute;
   right: 50px;
@@ -57,7 +57,7 @@ a:focus {
   font-size: 14px;
   font-family: "Muller-Light";
   line-height: 30px;
-  color: #009688;
+  color: #F44336;
 }
 
 .btn-lg {
@@ -71,16 +71,16 @@ a:focus {
 
 .write-me-button:hover {
   border-radius: 130px;
-  border: 1.5px solid #009688;
-  border-color: #009688;
-  background-color: #009688; 
+  border: 1.5px solid #F44336;
+  border-color: #F44336;
+  background-color: #F44336; 
 }
 
 .write-me-button:focus {
   border-radius: 130px;
-  border: 1.5px solid #009688;
-  border-color: #009688;
-  background-color: #009688; 
+  border: 1.5px solid #F44336;
+  border-color: #F44336;
+  background-color: #F44336; 
 }
 
 .write-me:focus {
@@ -123,7 +123,7 @@ a:focus {
   border-radius: 2px;
   width: 120px;
   height: 40px;
-  background-color: rgb(40, 151, 212);
+  background-color: #2196F3;
   color: white;
 }
 
@@ -219,7 +219,7 @@ textarea.form-control {
 .song-bg {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 550px;
   background: url(../img/song1-bg.jpg) center center no-repeat;
   background-size: 100% auto;
 }
@@ -251,13 +251,13 @@ textarea.form-control {
   width: 10%;
   height: 80px;
   padding: 0;
-  background-color: #009688;
+  background-color: #F44336;
   display: inline-block;
   float: left;
 }
 
 .jp-play {
-    background: url("../img/arrows.svg") center center no-repeat;
+    background: url("../icon/arrows.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -267,7 +267,7 @@ textarea.form-control {
 }
 
 .jp-state-playing .jp-play {
-    background: url("../img/pause.svg") center center no-repeat;
+    background: url("../icon/pause.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -277,7 +277,7 @@ textarea.form-control {
 }
 
 .jp-play:focus {
-    background: url("../img/arrows.svg") center center no-repeat;
+    background: url("../icon/arrows.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -287,7 +287,7 @@ textarea.form-control {
 }
 
 .jp-state-playing .jp-play:focus {
-    background: url("../img/pause.svg") center center no-repeat;
+    background: url("../icon/pause.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -348,16 +348,6 @@ textarea.form-control {
 }
 
 
-/*.jp-volume-controls {
-  position: absolute;
-  top: 32px;
-  left: 308px;
-  width: 200px;
-}*/
-
-
-
-
 
 
 .contact-container {
@@ -379,39 +369,52 @@ textarea.form-control {
   display: inline-block;
   width: 120px;
   height: 120px;
-  border: 2px solid black;
   border-radius: 140px;
-  margin: 25px 20px 175px 20px;
+  margin: 25px 20px 75px 20px;
 }
 
 .vk {
-  background: url(../img/vk.svg) center center no-repeat;
+  background: url(../icon/vk.svg) center center no-repeat;
   background-size: 48% auto;
 }
 
 .facebook {
-  background: url(../img/facebook.svg) center center no-repeat;
+  background: url(../icon/facebook.svg) center center no-repeat;
   background-size: 48% auto;
 }
 
 .instagram {
-  background: url(../img/instagram.svg) center center no-repeat;
+  background: url(../icon/instagram.svg) center center no-repeat;
   background-size: 48% auto;
 }
 
 .you-tube {
-  background: url(../img/you-tube.svg) center center no-repeat;
+  background: url(../icon/you-tube.svg) center center no-repeat;
   background-size: 48% auto;
 }
 
 .vk:hover {
-  background: url(../img/vk-full.svg) center center no-repeat;
+  background: url(../icon/vk-full.svg) center center no-repeat;
+  background-size: 48% auto;
+}
+
+.facebook:hover {
+  background: url(../icon/facebook-full.svg) center center no-repeat;
+  background-size: 48% auto;
+}
+
+.instagram:hover {
+  background: url(../icon/instagram-full.svg) center center no-repeat;
+  background-size: 48% auto;
+}
+
+.you-tube:hover {
+  background: url(../icon/you-tube-full.svg) center center no-repeat;
   background-size: 48% auto;
 }
 
 .social-box:hover {
   border: none;
-  background-color: black;
 }
 
 
