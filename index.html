@@ -1,145 +1,117 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Annie Tolmachova</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title here</title>
 
-		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-	    <link href="css/jplayer.blue.monday.css" rel="stylesheet">
-	    <link href="css/style.css" rel="stylesheet">
-	    <link href="icomoon/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jplayer.blue.monday.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="icomoon/style.css" rel="stylesheet">
+
+<!--     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  </head>
+
+  <body>
+
+  <!-- Cover -->
+  <div class="cover-container">
+  	<div class="bg-gradient"></div>
+  	<div class="cover-content-box">
+	  	<span class="cover-title">Annie Tolmachova</span>
+	  	<span class="cover-dsc">music in my heart</span>
+	  	<nav id="menu">
+	  	<li class="video-icon-box"><a href="#video" class="icon-video"></a></li>
+	  	<li class="music-icon-box"><a href="#music" class="icon-music"></a></li>
+	  	<li class="info-icon-box"><a href="#info" class="icon-user"></a></li>
+	  	</nav>
+  	</div>
+  </div>
+
+  <!-- Header -->
+	<nav class="header-container" id="menu-header">
+		<li><a href="#video" class="icon-video"></a></li>
+		<li><a href="#music" class="icon-music"></a></li>
+		<li><a href="#info" class="icon-user"></a></li>
+	</nav>
+
+  <!-- Video -->
+  <div class="video-container" id="video">
+  	<span class="video-title">Whatch me now</span>
+  	<span class="video-dsc">
+  		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+  	</span>
+  	<div class="video-box">  		
+	  	<iframe width="840" height="420" src="https://www.youtube.com/embed/M5YeJM9NIwQ" frameborder="0" allowfullscreen></iframe>
+  	</div>
+  	
+  </div>
+
+    <!-- Music -->
+  <div class="music-container" id="music">
+  	<span class="music-title">Whatch me now</span>
+  	<span class="music-dsc">
+  		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+  	</span>
+  	<div class="music-box">
+  	
+  	</div>
+  	<!-- My Songs Box -->
+	  <div id="song" class="my-songs-container">
+
+	    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	      <div class="jp-type-single">
+
+	        <div class="jp-details">
+	          <div class="jp-title" aria-label="title">&nbsp;</div>
+	        </div>
 
 
-	</head>
-
-	<body>
-
-  <!-- Menu -->
-  <nav id="menu" class="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#song">My Songs</a></li>
-    <li><a href="#follow">Follow me</a></li>
-
-	<!-- Button trigger modal -->		
-	<button type="button" class="btn btn-primary btn-lg write-me-button write-me toggleModal" data-toggle="modal" data-target="#exampleModal">write me</button>
-
-  </nav>
-
-<div class="wrapper">
-  <!-- Cover Box -->
-  <div id="home" class="cover-container">
-    <span class="cover-title">Annie Tolmachova</span>
-    <span class="cover-desc">Music in my heart...</span>
-  </div>	
-
-  <!-- About me Box -->
-  <div id="about" class="about-me-container">
-    <span class="about-me-title">So, here I'm</span>
-    <span class="about-me-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <br><br>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    </span>
-  </div>  
-
-  <!-- My Songs Box -->
-  <div id="song" class="my-songs-container">
-    <div class="song-bg">
-      <!-- <span class="my-songs-title">Play me</span> -->
-    </div>
-
-    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-      <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-        <div class="jp-type-single">
-        <div class="jp-details">
-          <div class="jp-title" aria-label="title">&nbsp;</div>
-        </div>
           <div class="jp-gui jp-interface">
 
             <div class="jp-controls">
               <button class="jp-play" role="button" tabindex="0">play</button>
-              <!-- <button class="jp-stop" role="button" tabindex="0">stop</button> -->
             </div>
 
+          <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
             <div class="jp-progress">
-            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-
               <div class="jp-seek-bar">
                 <div class="jp-play-bar"></div>
               </div>
+	          </div>
+          <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+	        </div>
 
-            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-
-    <!--         <div class="jp-volume-controls">
-              <button class="jp-mute" role="button" tabindex="0">mute</button>
-              <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-              <div class="jp-volume-bar">
-                <div class="jp-volume-bar-value"></div>
-              </div>
-            </div> -->
-
-        </div>
-      </div>
-    </div>
-
-
-
-  </div>  
-
-
-  <!-- Contact Box -->
-  <div id="follow" class="contact-container">
-    <span class="contact-title">You can find me here ;)</span>
-    <div class="social-box vk"></div>
-    <div class="social-box facebook"></div>
-    <div class="social-box instagram"></div>
-    <div class="social-box you-tube"></div>
-  </div>  
-
-</div>
-<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="exampleModalLabel">Please, leave your message</h4>
-		      </div>
-		      <div class="modal-body">
-		        <form action= "post.php" method= "POST">
-		          <div class="form-group">
-		            <input type="text" class="form-control" name= "name" placeholder="Name">
-		          </div>
-		          <div class="form-group">
-		            <input type="text" class="form-control" name= "email" placeholder="E-mail">
-		          </div>
-		          <div class="form-group">
-		            <textarea class="form-control" name= "message" placeholder="Message"></textarea>
-		          </div>
-		      </div>
-		      <div class="modal-footer">
-		        <input class="btn-send" type= "submit" value= "Отправить"> 
-		      </div>
-		    </div>
-		  </div>
-		</div>
+  <!-- Info -->
+  <div class="info-container" id="info">
+  	<span class="info-title">Whatch me now</span>
+  	<span class="info-dsc">
+  		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+  	</span>
+  	<span class="info-text">  		
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  	</span>
+  	
+  </div>
 
 
-
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
     <script src="js/jquery.jplayer.js"></script>
     <script src="js/script.js"></script>
 
-	</body>
+  </body>
+
 </html>

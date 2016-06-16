@@ -1,212 +1,215 @@
-nav {
-  display: inline-block;
-  width: 100%;
-  height: 75px;
-  background-color: rgba(255, 255, 255, 0.75);
-  position: fixed;
-  top: 0;
-  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.25);
-  padding-left: 20px;
-}
-
-.menu2 {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-li {
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  font-family: "Muller-Light";
-  color: #665D5A;
-  padding: 25px 20px; 
-}
-
-a:hover {
-  color: #009688;
-  text-decoration: none;
-}
-
-a:focus {
-  color: #009688;
-  text-decoration: none;
-}
-
-.write-me-button {
-  width: 120px;
-  height: 30px;
-  margin: 22.5px 0px;
-  border-radius: 130px;
-  border: 1.5px solid #009688;
-  transition: 0.35s;
-  position: absolute;
-  right: 50px;
-  background-color: rgba(0,0,0,0);
-}
-
-.write-me {
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Muller-Light";
-  line-height: 30px;
-  color: #009688;
-}
-
-.btn-lg {
-  padding: 0;
-}
-
-.write-me:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.write-me-button:hover {
-  border-radius: 130px;
-  border: 1.5px solid #009688;
-  border-color: #009688;
-  background-color: #009688; 
-}
-
-.write-me-button:focus {
-  border-radius: 130px;
-  border: 1.5px solid #009688;
-  border-color: #009688;
-  background-color: #009688; 
-}
-
-.write-me:focus {
-  color: white;
-  text-decoration: none;
-}
-
-/*Forms*/
-
-@media (min-width: 768px) {
-  .modal-dialog {
-      width: 600px;
-      margin: 150px auto;
-  }
-}
-
-.modal-header {
-    padding: 15px;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: rgb(88, 89, 93);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; 
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-control {
-  height: 40px;
-}
-
-.modal-footer {
-    border-top: none;
-    text-align: center;
-}
-
-.btn-send {
-  border: none;
-  border-radius: 2px;
-  width: 120px;
-  height: 40px;
-  background-color: rgb(40, 151, 212);
-  color: white;
-}
-
-.modal-title {
-  color: white;
-  font-family: "Muller-Regular";
-}
-
-.close {
-  color: white;
-  text-shadow: none;
-  opacity: 1;
-  margin-top: 0px;
-}
-
-.modal-backdrop.in {
-    opacity: .75;
-}
-
-textarea.form-control {
-    height: 100px;
-}
-
-.modal-open .wrapper {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -ms-filter: blur(5px);
-    -o-filter: blur(5px);
-    filter: blur(5px);    
-}
-
-.modal-content {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-/* /Forms */
-
-
-
 .cover-container {
-  display: block;
-  width: 100%;
-  height: 700px;
-  background: url(../img/cover.jpg) no-repeat top right;
+	display: block;
+	width: 100%;
+	height: 840px;
+	background: url(../img/cover.jpg) center center no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+
+.bg-gradient {
+	display: block;
+	width: 100%;
+	height: 840px;
+	position: absolute;
+	background-image: -o-linear-gradient(top, #993300 0%, #FFCC66 100%);
+	background-image: -moz-linear-gradient(top, #993300 0%, #FFCC66 100%);
+	background-image: -webkit-linear-gradient(top, #993300 0%, #FFCC66 100%);
+	background-image: -ms-linear-gradient(top, #993300 0%, #FFCC66 100%);
+	background-image: linear-gradient(to top, #993300 0%, #FFCC66 100%);
+	opacity: 0.8;
+	z-index: 1;
+	text-align: center;
+}
+
+.cover-content-box {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 840px;
+	text-align: center;
+	z-index: 5;
 }
 
 .cover-title {
-  display: block;
-  font-family: "Muller-Medium";
-  font-size: 36px;
-  color: rgb(255, 255, 255);
-  padding: 425px 0px 0px 50px;
-  text-transform: uppercase;
+	display: block;
+	z-index: 3;
+	font-size: 72px;
+	margin-top: 190px;
+	color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 2px;
 }
 
-.cover-desc {
-  display: block;
-  font-family: "Rage";
-  font-size: 72px;
-  color: rgba(255, 255, 255, 0.75);
-  padding: 0px 0px 0px 50px;
+.cover-dsc {
+	display: block;
+	font-size: 20px;
+	margin-top: 24px;
+	color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 4px;
 }
 
-.about-me-container {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  background-color: white;
-  text-align: center;
+.video-icon-box, .music-icon-box, .info-icon-box {
+	width: 100px;
+	height: 100px;
+	border: 2px solid rgba(255, 255, 255, 0);
+	border-radius: 101px;
+	margin-top: 96px;
+	display: inline-block;
+	transition-duration: 0.3s;
 }
 
-.about-me-title {
-  display: block;
-  font-family: "Muller-Medium";
-  font-size: 44px;
-  padding: 75px 50px 25px 50px;
+.music-icon-box {
+	margin-right: 72px;
+	margin-left: 72px;
 }
 
-.about-me-desc {
-  display: block;
-  font-family: "Muller-Light";
-  font-size: 14px;
-  padding: 0px 150px 75px 150px;
+.icon-video, .icon-music, .icon-user {
+	display: block;
+	position: absolute;
+	font-size: 32px;
+	color: rgba(255, 255, 255, 0.9);
+	transition-duration: 3s;
+}
+
+#menu a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.icon-video {
+	padding: 33px 33px;
+}
+
+.icon-music {
+	padding: 33px 35px 33px 30px;
+}
+
+.icon-user {
+	padding: 33px 34px 33px 32px;
+}
+
+.video-icon-box:hover {
+	border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.music-icon-box:hover {
+	border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.info-icon-box:hover {
+	border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.header-container {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 75px;
+	background-color: rgba(255, 255, 255, 0.9);
+	-webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.35);
+	z-index: 99999;
+	display: none;
+	text-align: center;
+}
+
+.header-container li {
+	display: inline-block;
+	text-decoration: none;
+	width: 75px;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+}
+
+#menu-header .icon-video, .icon-music, .icon-user {
+	color: black;
+}
+
+#menu-header a {
+	text-decoration: none;
+}
+
+.video-container {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 817px;
+/*	background-color: #FFE7AE;*/
+	background-image: -o-linear-gradient(top, #FFDF94 0%, #FFE7AE 100%);
+	background-image: -moz-linear-gradient(top, #FFDF94 0%, #FFE7AE 100%);
+	background-image: -webkit-linear-gradient(top, #FFDF94 0%, #FFE7AE 100%);
+	background-image: -ms-linear-gradient(top, #FFDF94 0%, #FFE7AE 100%);
+	background-image: linear-gradient(to top, #FFDF94 0%, #FFE7AE 100%);
+}
+
+.video-title, .music-title, .info-title {
+	display: block;
+	font-size: 36px;
+	padding-top: 175px;
+	color: #666666;
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;	
+}
+
+.video-dsc, .music-dsc, .info-dsc, .info-text {
+	display: block;
+	font-size: 14px;
+	padding-top: 16px;
+	color: #666666;
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;	
+}
+
+.info-text {
+	padding: 50px 15%;
+}
+
+.video-box {
+	display: block;
+	width: 840px;
+	height: 420px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin: 50px auto 0px auto;
+	-webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+}
+
+.music-container {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 817px;
+	background-image: -o-linear-gradient(top, #F4AEAB 0%, #FFDF94 100%);
+	background-image: -moz-linear-gradient(top, #F4AEAB 0%, #FFDF94 100%);
+	background-image: -webkit-linear-gradient(top, #F4AEAB 0%, #FFDF94 100%);
+	background-image: -ms-linear-gradient(top, #F4AEAB 0%, #FFDF94 100%);
+	background-image: linear-gradient(to top, #F4AEAB 0%, #FFDF94 100%);
+}
+
+.music-box {
+	display: block;
+	width: 220px;
+	height: 220px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: url(../img/song-cover01.jpg) center center no-repeat;
+	background-size: cover;
+	margin: 50px auto 0px auto;
+	-webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
 }
 
 .my-songs-container {
@@ -214,50 +217,44 @@ textarea.form-control {
   width: 100%;
   height: auto;
   text-align: center;
+  padding-top: 56px;
 }
 
-.song-bg {
-  display: block;
-  width: 100%;
-  height: 500px;
-  background: url(../img/song1-bg.jpg) center center no-repeat;
-  background-size: 100% auto;
+.jp-details .jp-title {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
 }
-
-.my-songs-title {
-  display: block;
-  font-size: 44px;
-  padding: 75px 50px 25px 50px;
-}
-
-
-
-/*Player Settings*/
 
 .jp-audio {
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   transform: translateY(-28px);
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: transparent;
+  display: inline-block;
 }
 
-
 .jp-details {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
 }
 
 .jp-audio .jp-controls {
-  width: 10%;
+  width: 80px;
   height: 80px;
   padding: 0;
-  background-color: #009688;
+  background-color: transparent;
   display: inline-block;
-  float: left;
+  float: none;
+  border-radius: 81px;
+  border: 2px solid white;
+  transform: translateY(-211px);
 }
 
 .jp-play {
-    background: url("../img/arrows.svg") center center no-repeat;
+    background: url("../icon/arrows.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -267,7 +264,7 @@ textarea.form-control {
 }
 
 .jp-state-playing .jp-play {
-    background: url("../img/pause.svg") center center no-repeat;
+    background: url("../icon/pause.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -277,7 +274,7 @@ textarea.form-control {
 }
 
 .jp-play:focus {
-    background: url("../img/arrows.svg") center center no-repeat;
+    background: url("../icon/arrows.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -287,7 +284,7 @@ textarea.form-control {
 }
 
 .jp-state-playing .jp-play:focus {
-    background: url("../img/pause.svg") center center no-repeat;
+    background: url("../icon/pause.svg") center center no-repeat;
     background-size: 40% auto;
     width: 100%;
     height: 100%;
@@ -306,26 +303,24 @@ textarea.form-control {
 .jp-current-time {
   display: inline;
   cursor: default;
-  padding: 32px 0px 0px 30px;
+  padding: 34px 0px 0px 0px;
   color: white;
-  position: absolute;
   z-index: 99999;
+  transform: translateX(-70px);
 }
 
 .jp-duration {
-    float: none;
     display: inline;
     cursor: pointer;
     font-size: 10px;
-    padding: 32px 30px 0px 0px;
+    padding: 34px 0px 0px 0px;
     color: white;
     z-index: 99999;
-    position: absolute;
-    right: 0px;
+    transform: translateX(70px);
 }
 
 .jp-seek-bar {
-    background: lightgrey;
+    background: white;
     width: 0px;
     height: 100%;
     cursor: pointer;
@@ -333,117 +328,40 @@ textarea.form-control {
 }
 
 .jp-play-bar {
-    background: gray;
+    background: #E56183;
     width: 0px;
     height: 100%;
+    border-radius: 21px;
 }
 
 .jp-audio .jp-type-single .jp-progress {
-    left: 10%;
-    width: 90%;
-    position: absolute;
-    top: 0px;
-    height: 80px;
-    display: inline-block;
+    width: 360px;
+    height: 20px;
+    display: block;
+    border-radius: 21px;
 }
 
-
-/*.jp-volume-controls {
-  position: absolute;
-  top: 32px;
-  left: 308px;
-  width: 200px;
-}*/
-
-
-
-
-
-
-.contact-container {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  background-color: white;
-  text-align: center;
+.jp-interface {
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    width: 360px;
+    margin: 0 auto 0 auto;
 }
 
-.contact-title {
-  display: block;
-  font-size: 44px;
-  font-family: "Muller-Medium";
-  padding: 75px 50px 25px 50px;
+.jp-progress {
+	display: block;
+	text-align: center;
 }
 
-.social-box {
-  display: inline-block;
-  width: 120px;
-  height: 120px;
-  border: 2px solid black;
-  border-radius: 140px;
-  margin: 25px 20px 175px 20px;
+.jp-audio .jp-type-single .jp-progress {
+    left: 0;
 }
 
-.vk {
-  background: url(../img/vk.svg) center center no-repeat;
-  background-size: 48% auto;
+.jp-progress {
+    overflow: hidden;
+    background-color: white;
 }
-
-.facebook {
-  background: url(../img/facebook.svg) center center no-repeat;
-  background-size: 48% auto;
-}
-
-.instagram {
-  background: url(../img/instagram.svg) center center no-repeat;
-  background-size: 48% auto;
-}
-
-.you-tube {
-  background: url(../img/you-tube.svg) center center no-repeat;
-  background-size: 48% auto;
-}
-
-.vk:hover {
-  background: url(../img/vk-full.svg) center center no-repeat;
-  background-size: 48% auto;
-}
-
-.social-box:hover {
-  border: none;
-  background-color: black;
-}
-
-
-
-
-/*Fonts Embed*/
-
-@font-face {
-    font-family: "Muller-Light";
-    src: url(../fonts/Muller-Light.otf);
-}
-
-@font-face {
-  font-family: "Muller-Regular";
-  src: url(../fonts/Muller-Regular.otf);
-}
-
-@font-face {
-  font-family: "Muller-Medium";
-  src: url(../fonts/Muller-Medium.otf);
-}
-
-@font-face {
-  font-family: "Rage";
-  src: url(../fonts/RAGE.TTF);
-}
-
-
-
-
-
-
 
 
 
